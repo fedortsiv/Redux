@@ -1,4 +1,4 @@
 // src/constants.js
 export const FORM_UPDATE_VALUE = 'FORM_UPDATE_VALUE';
 export const FORM_RESET = 'FORM_RESET';
-export const YEAR_COUNT = 'YEAR_COUNT';
+export const ANSVER = 'ANSVER';

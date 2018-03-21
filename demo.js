@@ -14,7 +14,7 @@ ReactDOM.render((
       name="lastname"
       validate={['required']}
       placeholder="Type your last name here"
-      label="Lastnam"/>
+      label="Lastname"/>
     <Text
       name="birthday"
       validate={['required']}
@@ -22,7 +22,10 @@ ReactDOM.render((
       label="Birthday"/>
 
     <SubmitButton/>
-    <Text
+    
+    <Ansver
+      name="answer"
+      label="Your age"
     />
   </Form>
 ), document.getElementById('container'));

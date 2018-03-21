@@ -2,7 +2,8 @@ import * as c from './constants';
 import assign from 'lodash.assign';
 
 const initialState = { //define initial state - an empty form
-  values: {}
+  values: {},
+  ansver: {}
 };
 
 export default (state = initialState, action) => {
@@ -18,11 +19,9 @@ export default (state = initialState, action) => {
   case c.FORM_RESET:
     return initialState;
 
-  case c.YEAR_COUNT:
+  case c.ANSVER:
     return assign({}, state, {
-      values: assign({}, state.values, {
-        [action.name]: action.value
-      })
+      ansver: assign({}, state.value.birthday)
     });
 
   default:

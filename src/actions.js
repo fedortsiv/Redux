@@ -8,10 +8,10 @@ export function update(name, value) {
   });
 }
 
-export function count(name, value){
+export function ansver(name, value){
 	return dispatch => dispatch({
-    type: c.YEAR_COUNT,
-    name, value
+    type: c.ANSVER,
+    ansver:  Date.getFullYear() - value
   });
 }
 

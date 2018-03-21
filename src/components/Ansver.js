@@ -1,4 +1,3 @@
-// src/components/Form.js
 import React, {PropTypes} from 'react';
 import without from 'lodash.without';
 import assign from 'lodash.assign';
@@ -6,7 +5,7 @@ import assign from 'lodash.assign';
 const noop = () => undefined;
 
 export default React.createClass({
-  displayName: 'Form',
+  displayName: 'Ansver',
 
   propTypes: {
     children: PropTypes.node,
@@ -35,25 +34,9 @@ export default React.createClass({
 
   validations: [],
 
-  registerValidation(isValidFunc) {
-    this.validations = [...this.validations, isValidFunc];
-    return this.removeValidation.bind(null, isValidFunc);
-  },
-
-  removeValidation(ref) {
-    this.validations = without(this.validations, ref);
-  },
-
-  isFormValid(showErrors) {
-    return this.validations.reduce((memo, isValidFunc) => 
-      isValidFunc(showErrors) && memo, true);
-  },
 
   submit(){
-    if (this.isFormValid(true)) {
       this.props.onSubmit(assign({}, this.props.values));
-      this.props.reset();
-    }
   },
 
   getChildContext() {
