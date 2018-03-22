@@ -21,7 +21,7 @@ export default (state = initialState, action) => {
 
   case c.ANSVER:
     return assign({}, state, {
-      ansver: assign({}, state.value.birthday)
+      ansver: Date.getFullYear() - action.value.birthday
     });
 
   default:

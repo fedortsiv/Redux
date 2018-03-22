@@ -1,7 +1,7 @@
 // demo.js
 import React from 'react';
 import ReactDOM from 'react-dom';
-import Form, {Text, SubmitButton} from './src/index';
+import Form, {Text, SubmitButton, Ansver} from './src/index';
 
 ReactDOM.render((
   <Form onSubmit={data => console.log(data)}>
@@ -24,7 +24,7 @@ ReactDOM.render((
     <SubmitButton/>
     
     <Ansver
-      name="answer"
+      name="ansver"
       label="Your age"
     />
   </Form>

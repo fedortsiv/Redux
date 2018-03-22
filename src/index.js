@@ -6,6 +6,7 @@ import { Provider } from 'react-redux';
 import thunk from 'redux-thunk';
 import createLogger from 'redux-logger';
 import Form from './components/Form';
+import Ansver from './components/Ansver';
 import * as actions from './actions';
 import store from './store';
 import injectTapEventPlugin from 'react-tap-event-plugin';
@@ -24,4 +25,3 @@ export default props => (
 
 export {default as Text} from './components/Text';
 export {default as SubmitButton} from './components/SubmitButton';
-export {default as Ansver} from './components/Ansver';

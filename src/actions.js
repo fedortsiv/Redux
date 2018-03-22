@@ -8,10 +8,10 @@ export function update(name, value) {
   });
 }
 
-export function ansver(name, value){
+export function ansver(value){
 	return dispatch => dispatch({
     type: c.ANSVER,
-    ansver:  Date.getFullYear() - value
+    ansver: value
   });
 }
 
